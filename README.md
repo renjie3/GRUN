@@ -38,10 +38,12 @@ Detailed CMD of GRUN and evaluation can be found in **cmd_wmdp.sh**
 
 Baseline is unlearned using [original repo](https://github.com/centerforaisafety/wmdp) with the following cmd
 
-```python3 -m rmu.unlearn --model_name meta-llama/Llama-3.1-8B --batch_size 4 --layer_ids 13,14,15 --layer_id 15 --max_num_batches 150 --layer_ids 13,14,15 --layer_id 15 --retain_corpora wikitext,wikitext --forget_corpora bio-forget-corpus,cyber-forget-corpus --steering_coeffs 30,30 --alpha 350,350 --lr 5e-5 --seed 42 --output_dir models/llama3_rmu_param18
+```
+python3 -m rmu.unlearn --model_name meta-llama/Llama-3.1-8B --batch_size 4 --layer_ids 13,14,15 --layer_id 15 --max_num_batches 150 --layer_ids 13,14,15 --layer_id 15 --retain_corpora wikitext,wikitext --forget_corpora bio-forget-corpus,cyber-forget-corpus --steering_coeffs 30,30 --alpha 350,350 --lr 5e-5 --seed 42 --output_dir models/llama3_rmu_param18
 ```
 
-```python3 -m rmu.unlearn --model_name mistralai/Mistral-7B-v0.1 --batch_size 4 --layer_ids 13,14,15 --layer_id 15 --max_num_batches 150 --retain_corpora wikitext,wikitext --forget_corpora bio-forget-corpus,cyber-forget-corpus --steering_coeffs 27,27 --alpha 1600,1600 --min_len 200 --lr 5e-5 --seed 42 --output_dir models/mistral_rmu_param19
+```
+python3 -m rmu.unlearn --model_name mistralai/Mistral-7B-v0.1 --batch_size 4 --layer_ids 13,14,15 --layer_id 15 --max_num_batches 150 --retain_corpora wikitext,wikitext --forget_corpora bio-forget-corpus,cyber-forget-corpus --steering_coeffs 27,27 --alpha 1600,1600 --min_len 200 --lr 5e-5 --seed 42 --output_dir models/mistral_rmu_param19
 ```
 
 ## Cite
