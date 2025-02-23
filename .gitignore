@@ -1,0 +1,9 @@
+history_job.log
+local_history.log
+results/
+__pycache__/
+*/__pycache__/
+outputs/
+paper_models/
+local_cmd.sh
+grandriver_job.sh

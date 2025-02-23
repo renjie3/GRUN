@@ -1,0 +1,21 @@
+model_family: llama3.1 # zephyr-7b-beta llama2-7b llama3.1 gpt_neo
+
+LoRA:
+  r: 0
+  alpha: 32
+  dropout: 0.05
+
+# data_path: locuslab/TOFU
+data_path: ./TOFU_data
+split: full
+batch_size: 1
+gradient_accumulation_steps: 4
+num_epochs: 10
+lr: 1e-5
+seed: 42
+run_index: 1
+save_job_name: local
+save_dir: paper_models/${save_job_name}_2_final_ft_noLORA_5_epochs_inst_lr${lr}_${model_family}_${split}_seed${seed}_${run_index}
+weight_decay: 0.01
+use_model_path: false
+model_path: ${model_family}

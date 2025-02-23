@@ -1,0 +1,32 @@
+model_family: llama3.1
+model_path: /egr/research-dselab/renjie3/renjie/2024amazon/Unlearn-Simple/TOFU/paper_models/Llama-3.1-8B
+LoRA:
+  r: 0
+  alpha: 32
+  dropout: 0.05
+
+lr: 1e-5
+split: wmdp
+retain_set: wmdp
+batch_size: 1
+gradient_accumulation_steps: 2
+num_epochs: 10
+forget_loss: npo_grad_diff
+
+npo_coeff: 10000
+grad_diff_coeff: 1.0
+KL_coeff: 1.0
+ref_policy: fine_tuned
+beta: 99
+weight_decay: 0.0
+gamma: 0.0
+
+seed: 1001
+run_index: 1
+overwrite_dir: false
+eval_steps: steps_per_epoch
+warmup_steps: steps_per_epoch
+
+save_dir: ${model_path}/unlearned/8GPU_npocoeff${npo_coeff}_${forget_loss}_${lr}_${split}_epoch${num_epochs}_batch${batch_size}_accum${gradient_accumulation_steps}_beta${beta}_grad_diff_coeff${grad_diff_coeff}_ref${ref_policy}_eval${eval_steps}_seed${seed}_${run_index}
+
+eval: null
