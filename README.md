@@ -15,22 +15,17 @@ We modified the files to accommodate the output of gate: ./pyvene_custom/models/
 ### TOFU
 
 #### Finetune vanilla llama3.1 and mistral to learn TOFU
-
-Detailed CMD of finetuning can be found in **cmd_finetune.sh**
+- Detailed CMD of finetuning can be found in **cmd_finetune.sh**
 
 #### Baseline: GD, IDK, NPO, and their loRA
-
-Detailed CMD of baseline can be found in **cmd_baseline.sh**
+- Detailed CMD of baseline can be found in **cmd_baseline.sh**
 
 #### GRUN
-
-Detailed CMD of GRUN can be found in **cmd_grun.sh**
+- Detailed CMD of GRUN can be found in **cmd_grun.sh**
 
 #### Evaluation
-
-Detailed CMD of evaluating baseline and GRUN can be found in **cmd_eval.sh**
-
-Baseline of GRUN is set by BASE_OR_REFT.
+- Detailed CMD of evaluating baseline and GRUN can be found in **cmd_eval.sh**
+- Baseline of GRUN is set by BASE_OR_REFT.
 
 ### WMDP
 
