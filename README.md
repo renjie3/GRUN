@@ -12,7 +12,7 @@ We modified the files to accommodate the output of gate: ./pyvene_custom/models/
 
 ## How to use
 
-### TOFU
+### 1. TOFU
 
 #### Finetune vanilla llama3.1 and mistral to learn TOFU
 - Detailed CMD of finetuning can be found in **cmd_finetune.sh**
@@ -25,9 +25,9 @@ We modified the files to accommodate the output of gate: ./pyvene_custom/models/
 
 #### Evaluation
 - Detailed CMD of evaluating baseline and GRUN can be found in **cmd_eval.sh**
-- Baseline of GRUN is set by BASE_OR_REFT.
+- Baseline or GRUN is set by BASE_OR_REFT.
 
-### WMDP
+### 2. WMDP
 
 Detailed CMD of GRUN and evaluation can be found in **cmd_wmdp.sh**
 
