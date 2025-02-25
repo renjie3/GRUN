@@ -41,7 +41,7 @@ python3 -m rmu.unlearn --model_name meta-llama/Llama-3.1-8B --batch_size 4 --lay
 python3 -m rmu.unlearn --model_name mistralai/Mistral-7B-v0.1 --batch_size 4 --layer_ids 13,14,15 --layer_id 15 --max_num_batches 150 --retain_corpora wikitext,wikitext --forget_corpora bio-forget-corpus,cyber-forget-corpus --steering_coeffs 27,27 --alpha 1600,1600 --min_len 200 --lr 5e-5 --seed 42 --output_dir models/mistral_rmu_param19
 ```
 
-## Cite
+<!-- ## Cite
 ```
 @article{ren2024unveiling,
   title={Unveiling and Mitigating Memorization in Text-to-image Diffusion Models through Cross Attention},
@@ -49,4 +49,4 @@ python3 -m rmu.unlearn --model_name mistralai/Mistral-7B-v0.1 --batch_size 4 --l
   journal={arXiv preprint arXiv:2403.11052},
   year={2024}
 }
-```
+``` -->
