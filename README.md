@@ -13,7 +13,7 @@
 <table align="center">
   <tr>
     <td align="center"> 
-      <img src="figure/grun.png" alt="Teaser" style="width: 700px;"/> 
+      <img src="figure/grun.png" alt="Teaser" style="width: 50%;"/> 
       <br>
       <em style="font-size: 18px;">  <strong style="font-size: 18px;">Figure:</strong>GRUN consists of two plug-and-play components explicitly for distinguishing and suppression: a soft gate function to distinguish target data, and a ReFT module to suppress target-data-related generation.</em>
     </td>
