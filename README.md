@@ -1,4 +1,24 @@
+<div align='center'>
+ 
 # A General Framework to Enhance Fine-tuning-based LLM Unlearning
+
+[![preprint](https://img.shields.io/badge/arXiv-2502.17823-B31B1B)](https://arxiv.org/abs/2502.17823)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://github.com/renjie3/GRUN/blob/main/LICENSE)
+[![GitHub top language](https://img.shields.io/github/languages/top/renjie3/GRUN)](https://github.com/renjie3/GRUN)
+[![GitHub repo size](https://img.shields.io/github/repo-size/renjie3/GRUN)](https://github.com/renjie3/GRUN)
+[![GitHub stars](https://img.shields.io/github/stars/renjie3/GRUN)](https://github.com/renjie3/GRUN)
+
+</div>
+
+<table align="center">
+  <tr>
+    <td align="center"> 
+      <img src="figure/grun.png" alt="Teaser" style="width: 700px;"/> 
+      <br>
+      <em style="font-size: 18px;">  <strong style="font-size: 18px;">Figure:</strong>GRUN consists of two plug-and-play components explicitly for distinguishing and suppression: a soft gate function to distinguish target data, and a ReFT module to suppress target-data-related generation.</em>
+    </td>
+  </tr>
+</table>
 
 Official code for **A General Framework to Enhance Fine-tuning-based LLM Unlearning**
 
@@ -41,12 +61,12 @@ python3 -m rmu.unlearn --model_name meta-llama/Llama-3.1-8B --batch_size 4 --lay
 python3 -m rmu.unlearn --model_name mistralai/Mistral-7B-v0.1 --batch_size 4 --layer_ids 13,14,15 --layer_id 15 --max_num_batches 150 --retain_corpora wikitext,wikitext --forget_corpora bio-forget-corpus,cyber-forget-corpus --steering_coeffs 27,27 --alpha 1600,1600 --min_len 200 --lr 5e-5 --seed 42 --output_dir models/mistral_rmu_param19
 ```
 
-<!-- ## Cite
+## Cite
 ```
-@article{ren2024unveiling,
-  title={Unveiling and Mitigating Memorization in Text-to-image Diffusion Models through Cross Attention},
-  author={Ren, Jie and Li, Yaxin and Zen, Shenglai and Xu, Han and Lyu, Lingjuan and Xing, Yue and Tang, Jiliang},
-  journal={arXiv preprint arXiv:2403.11052},
-  year={2024}
+@article{ren2025general,
+  title={A General Framework to Enhance Fine-tuning-based LLM Unlearning},
+  author={Ren, Jie and Dai, Zhenwei and Tang, Xianfeng and Liu, Hui and Zeng, Jingying and Li, Zhen and Goutam, Rahul and Wang, Suhang and Xing, Yue and He, Qi},
+  journal={arXiv preprint arXiv:2502.17823},
+  year={2025}
 }
-``` -->
+```
